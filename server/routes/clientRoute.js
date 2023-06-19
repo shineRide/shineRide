@@ -10,7 +10,7 @@ const {
 
 router.post("/addClient", addClient);
 router.get("/getAll", getAll);
-router.get("/getOne/:id", getOne);
+router.get("/getOne/:email", getOne);
 router.delete("/deleteClient/:id", deleteClient);
 router.put("/updateClients/:id", updateClient);
 

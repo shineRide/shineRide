@@ -4,7 +4,7 @@ import { Pressable, Text } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import LottieAnimationScreen from "./lottie";
 
-const Entry = () => {
+const Entry = ({navigation}) => {
   return (
     <>
       <Center>
@@ -37,6 +37,7 @@ const Entry = () => {
             borderWidth: 1,
             borderColor: "white",
           }}
+          onPress={()=>navigation.navigate("SignUp")}
         >
           <Text
             style={{
@@ -64,6 +65,8 @@ const Entry = () => {
             borderWidth: 1,
             borderColor: "white",
           }}
+          onPress={()=>navigation.navigate("Signin")}
+
         >
           <Text
             style={{
