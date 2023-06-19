@@ -20,7 +20,7 @@ USE `washing` ;
 CREATE TABLE IF NOT EXISTS `washing`.`clients` (
   `client_id` INT NOT NULL AUTO_INCREMENT,
   `client_name` VARCHAR(45) NULL,
-  `client_email` VARCHAR(45) NULL,
+  `client_email` VARCHAR(45) NULL UNIQUE,
   `client_image` VARCHAR(45) NULL,
   PRIMARY KEY (`client_id`),
   UNIQUE INDEX `client_id_UNIQUE` (`client_id` ASC) VISIBLE)

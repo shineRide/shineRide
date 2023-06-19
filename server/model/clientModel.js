@@ -13,8 +13,8 @@ module.exports = {
       callback(error, results);
     });
   },
-  getOne: (callback, client_id) => {
-    const sql = `select * from clients WHERE client_id ="${client_id}" ;`;
+  getOne: (callback, email) => {
+    const sql = `select * from clients WHERE client_email ="${email}" ;`;
     conn.query(sql, (error, results) => {
       callback(error, results);
     });

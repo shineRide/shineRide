@@ -14,7 +14,7 @@ app.use("/worker", workerRoute);
 app.use("/service", serviceRoute);
 app.use("/clientHasWorker", clientHasWorker);
 
-const port = 5000;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
