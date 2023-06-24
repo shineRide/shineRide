@@ -17,9 +17,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { colors } from "./theme";
 import Rating from "./Rating";
+import { useNavigation } from "@react-navigation/native";
 
 import StyledText from "./styledText";
 const hello = () => {
+  const navigation = useNavigation();
   return (
     //view hedhi zedneha bch nbadlou l backgroundcolor lel blanc ;
     <View
@@ -190,12 +192,12 @@ const hello = () => {
             Specialist
           </Text>
           <Text
+            onPress={() => navigation.navigate("specialist")}
             style={{
               fontSize: 15,
               marginLeft: 215,
               color: "#1B4E9C",
               marginTop: 20,
-              // marginBottom: 100,
               fontWeight: "bold",
             }}
           >
@@ -216,7 +218,7 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/v1687195587/Untitled_design_20_tikffl.png",
                   }}
                   style={{
                     height: 150,
@@ -235,7 +237,7 @@ const hello = () => {
                       color: "#1B4E9C",
                     }}
                   >
-                    Tijjani bou3okez
+                    hedhi ounifi
                   </Text>
                 </HStack>
               </View>
@@ -253,7 +255,7 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/v1687195794/Untitled_design_21_soghva.png",
                   }}
                   style={{
                     height: 150,
@@ -272,7 +274,7 @@ const hello = () => {
                       color: "#1B4E9C",
                     }}
                   >
-                    fawzi ben gamra
+                    hssin makki
                   </Text>
                 </HStack>
               </View>
@@ -292,7 +294,7 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/v1687195972/Untitled_design_22_u1h013.png",
                   }}
                   style={{
                     height: 150,
@@ -311,7 +313,7 @@ const hello = () => {
                       color: "#1B4E9C",
                     }}
                   >
-                    Lotfi louay
+                    mahdi nahdi
                   </Text>
                 </HStack>
               </View>
@@ -333,6 +335,7 @@ const hello = () => {
             Categories
           </Text>
           <Text
+            onPress={() => navigation.navigate("categories")}
             style={{
               fontSize: 15,
               marginLeft: 215,
@@ -347,6 +350,8 @@ const hello = () => {
         </HStack>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <HStack>
+            {/* men hne yabda far tajereb */}
+
             <View
               style={{
                 height: 150,
@@ -359,31 +364,18 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/c_scale,h_1500,w_1000/v1687193937/Untitled_design_15_rtdk6u.png",
                   }}
-                  style={{
-                    height: 150,
-                    width: 150,
-                    borderRadius: 10,
-                  }}
+                  style={[styles.imagee, StyleSheet.absoluteFill]}
                 />
+                <StyledText style={styles.titlee} bold>
+                  Car Wash
+                </StyledText>
               </View>
-              <View style={{ paddingLeft: 10, paddingTop: 10 }}>
-                <HStack>
-                  <Text
-                    style={{
-                      fontSize: 10,
-                      fontWeight: "700",
-                      textTransform: "uppercase",
-                      color: "#1B4E9C",
-                    }}
-                  >
-                    hello
-                  </Text>
-                </HStack>
-              </View>
-              <Rating />
             </View>
+
+            {/* hne youfa */}
+
             <View
               style={{
                 height: 150,
@@ -396,31 +388,16 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/c_scale,h_1500,w_1000/v1687194678/Untitled_design_18_dw7mjq.png",
                   }}
-                  style={{
-                    height: 150,
-                    width: 150,
-                    borderRadius: 10,
-                  }}
+                  style={[styles.imagee, StyleSheet.absoluteFill]}
                 />
+                <StyledText style={styles.titlee} bold>
+                  polishing
+                </StyledText>
               </View>
-              <View style={{ paddingLeft: 10, paddingTop: 10 }}>
-                <HStack>
-                  <Text
-                    style={{
-                      fontSize: 10,
-                      fontWeight: "700",
-                      textTransform: "uppercase",
-                      color: "#1B4E9C",
-                    }}
-                  >
-                    hello
-                  </Text>
-                </HStack>
-              </View>
-              <Rating />
             </View>
+
             <View
               style={{
                 height: 150,
@@ -435,30 +412,14 @@ const hello = () => {
               <View>
                 <Image
                   source={{
-                    uri: "https://media.istockphoto.com/id/1304509203/photo/man-after-washing-wipes-white-car-with-a-rag-at-car-wash.jpg?s=612x612&w=0&k=20&c=_GKYMFSq_xF4QzOD9fg-S5hNNZXEJIIQA1M1x-81_7A=",
+                    uri: "https://res.cloudinary.com/dvnuvw9rt/image/upload/c_scale,h_1500,w_1000/v1687194248/Untitled_design_16_qfsuma.png",
                   }}
-                  style={{
-                    height: 150,
-                    width: 150,
-                    borderRadius: 10,
-                  }}
+                  style={[styles.imagee, StyleSheet.absoluteFill]}
                 />
+                <StyledText style={styles.titlee} bold>
+                  EngineWash
+                </StyledText>
               </View>
-              <View style={{ paddingLeft: 10, paddingTop: 10 }}>
-                <HStack>
-                  <Text
-                    style={{
-                      fontSize: 10,
-                      fontWeight: "700",
-                      textTransform: "uppercase",
-                      color: "#1B4E9C",
-                    }}
-                  >
-                    hello
-                  </Text>
-                </HStack>
-              </View>
-              <Rating />
             </View>
           </HStack>
         </ScrollView>
@@ -487,6 +448,11 @@ const styles = StyleSheet.create({
     width: 100,
     borderRadius: 60,
   },
+  imagee: {
+    height: 200,
+    width: 160,
+    borderRadius: 10,
+  },
 
   title: {
     fontSize: 19,
@@ -499,6 +465,20 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     borderWidth: 1,
     borderColor: "#1B4E9C",
+  },
+  titlee: {
+    fontSize: 19,
+    color: colors.primary,
+    height: "50%",
+    width: "90%",
+    textAlign: "center",
+    textAlignVertical: "center",
+    backgroundColor: "#0008",
+    borderRadius: 60,
+    borderWidth: 1,
+
+    top: 150,
+    marginLeft: 10,
   },
 });
 

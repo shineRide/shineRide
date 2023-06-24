@@ -2,13 +2,14 @@ import React, { useContext } from "react";
 import { Button, View } from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
-
+import specialist from './specialist'
 import Signup from "./signup";
 import Entry from "./entry";
 
 import Signin from "./signin";
-import hi from "./hi";
 import Home from "./home";
+import categ from "./categ";
+import LottieAnimationScreentwo from "./djhs";
 import {
   MaterialCommunityIcons,
   AntDesign,
@@ -42,11 +43,10 @@ const navigation = () => {
       }}
     >
       <Drawer.Screen name="home" component={Home} />
-      <Drawer.Screen name="signup" component={Signup} />
-      <Drawer.Screen name="hi" component={hi} />
+      <Drawer.Screen name="categories" component={categ} />
 
-      <Drawer.Screen name="sign in" component={Signin} />
-      <Drawer.Screen name="Entry" component={Entry} />
+      <Drawer.Screen name="specialist" component={specialist} />
+      <Drawer.Screen name="lottie" component={LottieAnimationScreentwo} />
     </Drawer.Navigator>
   );
 };

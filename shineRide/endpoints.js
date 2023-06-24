@@ -1,5 +1,5 @@
 //t7ot il-URL de base mta3 l'API bach tbadel il-Wi-Fi  tbadel  seulement bch.
-const baseUrl = "http://192.168.0.181:3000"
+const baseUrl = "http://192.168.1.10:3000"
 export const clientEndpoints = {
   //fi getClients tnajem trecuperi kol il-clients
   getClients: `${baseUrl}/client/getAll`,
